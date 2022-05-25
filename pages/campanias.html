@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link de boots-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <!-- link animation -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -18,56 +21,80 @@
     <header>
         <h1 class="animate__animated animate__wobble"> ¡CHUKUK! </h1>
 
-        <nav class="menu">
-            <ul>
-                <li> 
-                    <a href="../index.html"> Home </a>
-                </li>
-                <li> 
-                    <a href="campanias.html"> Campañas </a>
-                </li>
-                <li> 
-                    <a href="productos.html"> Productos </a>
-                </li>
-                <li> 
-                    <a href="nosotros.html"> Nosotros </a>
-                </li>
-                <li> 
-                    <a href="contacto.html"> Contacto </a>
-                </li>
-            </ul>
-        </nav>
+        <!-- menu boot-->
+            
+        <div class="row">
+            <nav class="navbar navbar-expand-lg col-12" style="background-color: #94B49F;">
+                <div class="container">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/campanias.html" style="color: white;">Campañas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html" style="color: white;">Productos</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html" style="color: white;">Nosotros</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html" style="color: white;">Contactos</a>
+                      </li>     
+                      </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
 
     </header>
     
     <main class="campanias">
         <div class="info">
         <H2 class="subCampanias"> NUESTRAS CAMPAÑAS </H2>
-            <h3 class="tituloP"> Informacion de campañias</h3>
+            <h3 class="tituloP"> Informacion de campañas</h3>
             <p class="pCampanias">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi nobis culpa libero quibusdam nemo quas in eos quia tempora vel facilis assumenda quaerat, molestias maiores fugiat quam similique est modi!
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi fuga iusto tenetur? Eos cupiditate eligendi voluptatem et repellat perspiciatis ab porro, ut est esse quam libero iusto. Debitis, veritatis.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et maiores voluptates nostrum, enim porro quas magni alias minima consequatur distinctio aspernatur quae eos rerum obcaecati fugiat repudiandae laborum totam! Perferendis.   
-        </p>
-    </div>
-
-        <div class="imagenEnero">
-            <h4 class="enero"> Enero </h4>
-            <img class="img" src="../img/velas1.jpg" alt="velas">
-        </div>
-        <div class="imagenFebrero">
-            <h4 class="febrero"> Febrero </h4>
-            <img src="../img/Sahumerios1.jpg" alt="sahumerios">
-        </div>
-        <div class="imagenMarzo">
-            <h4 class="marzo"> Marzo </h4>
-            <img src="../img/Difusores1.jpg" alt="difusores">
-        </div>
-        <div class="imagenAbril">
-            <h4 class="abril"> Abril </h4>   
-            <img src="../img/aromatizador1.jpg" alt="aromatizador">
-        </div>
-        
+            </p>
+          </div>
+          
+          <section class="container">
+            
+            <div class="row">
+                <!-- carrusel -->
+                <div id="carouselExampleControls" class="carousel slide col-12" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/velas1.jpg" class="d-block w-100" alt="velas">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/Sahumerios1.jpg" class="d-block w-100" alt="sahumerios">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/aromatizador1.jpg" class="d-block w-100" alt="aromatizador">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/Difusores1.jpg" class="d-block w-100" alt="difusores">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+          </section>
 
     </main>
 
@@ -77,5 +104,7 @@
 
     </footer>
     
+    <!-- link de js bt-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

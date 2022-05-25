@@ -6,6 +6,7 @@
 
 /* css home*/
 body{
+    margin-bottom: 100px;
     /*background-color: #94B49F;*/
     background-image: linear-gradient(#94B49F, #E5E3C9);
 }
@@ -27,27 +28,9 @@ header h1{
     text-decoration: underline;
 }
 
-/* estilos del menu */
-
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    background-color: #B4CFB0;
-}
-
-nav ul li{
-    background-color: whitesmoke;
-    border-radius: 0.5rem ;
-    padding: 0.3rem;
-    
-}
-nav ul li a{
-    text-decoration: none;
-}
-
-
 .main{
+    margin-top: 200px;
+    margin-bottom: 400px;
     display: grid;
     grid-template-areas:"tituloMain tituloMain"
                         "parrafo parrafo";
@@ -70,14 +53,10 @@ nav ul li a{
     justify-content: center;
 }
 
-/*.imagen:hover{
-    transform: rotate(360deg);
-    animation-duration: 3seg;
-}*/
-
 .footer{
-    margin: 1px;
     text-align: center;
+    background-color: #94B49F;
+
 }
 
 
@@ -88,9 +67,11 @@ nav ul li a{
     
 
     .main{
-        grid-template-areas: "tituloMain tituloMain tituloMain"
-                             "parrafo parrafo parrafo"
-                             "imagen imagen imagen";
+        margin-top: 50px;
+        margin-bottom: 400px;
+        grid-template-areas:"tituloMain tituloMain tituloMain"
+                            "parrafo parrafo parrafo"
+                            "imagen imagen imagen";
         justify-content: center;
         justify-items: center;
     }
@@ -109,6 +90,8 @@ nav ul li a{
 @media screen and (min-width:1024px){
     
     .main{
+        margin-top: 50px;
+        margin-bottom: 400px;
         grid-template-areas:"tituloMain tituloMain tituloMain tituloMain"
                             "parrafo parrafo parrafo imagen"
                             "parrafo parrafo parrafo imagen";
@@ -130,6 +113,8 @@ nav ul li a{
 /* css campañas*/
 
 .campanias{
+    margin-top: 100px;
+    margin-bottom: 200px;
     display: grid;
     grid-template-areas:"info info";
 }
@@ -142,40 +127,9 @@ nav ul li a{
     grid-area: info;
 }
 
-
-.imagenEnero{
+.container{
     display: none;
 }
-
-.imagenEnero:hover{
-    transform: translate(-15px);
-
-}
-
-.imagenFebrero{
-    display: none;
-}
-
-.imagenFebrero:hover{
-    transform: translate(-15px); 
-}
-
-.imagenMarzo{
-    display: none;
-}
-
-.imagenMarzo:hover{
-    transform: translate(-15px);
-}
-
-.imagenAbril{
-    display: none;
-}
-
-.imagenAbril:hover{
-    transform: translate(-15px);
-}
-
 .tituloP{
     text-align: center;
 }
@@ -186,80 +140,56 @@ nav ul li a{
 
 @media screen and (min-width:600px){
     .campanias{
+        margin-top: 100px;
+    margin-bottom: 475px;
         justify-items: center;
         display: grid;
         grid-template-areas:"info info info"
-                            "imagenEnero imagenEnero imagenEnero "
-                            "imagenFebrero imagenFebrero imagenFebrero"
-                            "imagenMarzo imagenMarzo imagenMarzo" 
-                            "imagenAbril imagenAbril imagenAbril";
+                            "container container container"
+                            "container container container"
+                            "container container container"
+                            "container container container";
     }
-.info{
+    .info{
     grid-area: info;
-}
+    }
 
-.imagenEnero{
+    .container{
+        grid-area: container;
     display: block;
-    grid-area: imagenEnero;
-}
-
-.imagenFebrero{
-    display: block;
-    grid-area: imagenFebrero;
-}
-
-.imagenMarzo{
-    display: block;
-    grid-area: imagenMarzo;
-}
-
-.imagenAbril{
-    display: block;
-    grid-area: imagenAbril;
-}
+    }
 }
 
 @media screen and (min-width:1024px){
     .campanias{
+        margin-top: 100px;
+    margin-bottom: 475px;
         justify-items: center;
         display: grid;
-        grid-template-areas:"info info imagenEnero imagenEnero "
-                            "info info imagenFebrero imagenFebrero"
-                            "info info imagenMarzo imagenMarzo" 
-                            "info info imagenAbril imagenAbril";
+        grid-template-areas:"info container container container"
+                            "info container container container"
+                            "info container container container"
+                            "info container container container";
     }
 
     .info{
         grid-area: info;
     }
-    
-    .imagenEnero{
+
+    .container{
+        grid-area: container;
         display: block;
-        grid-area: imagenEnero;
-    }
-    
-    .imagenFebrero{
-        display: block;
-        grid-area: imagenFebrero;
-    }
-    
-    .imagenMarzo{
-        display: block;
-        grid-area: imagenMarzo;
-    }
-    
-    .imagenAbril{
-        display: block;
-        grid-area: imagenAbril;
     }
 }
 
 /* css productos*/
 
 .productos{
+    margin-top: 100px;
+    margin-bottom: 200px;
     justify-items: center;
     display: grid;
-    grid-template-areas: "subProductos subProductos"
+    grid-template-areas:"subProductos subProductos"
                         "pProductos pProductos"
                         "imagenVela imagenVela"
                         "imagenSahumerios imagenSahumerios"
@@ -313,86 +243,87 @@ nav ul li a{
     
     .productos{
         justify-items: center;
-    display: grid;
-    grid-template-areas: "subProductos subProductos subProductos"
+        display: grid;
+        grid-template-areas:"subProductos subProductos subProductos"
                         "pProductos pProductos pProductos"
                         "imagenVela imagenVela imagenVela" 
                         "imagenSahumerios imagenSahumerios imagenSahumerios"
                         "imagenDifusores imagenDifusores imagenDifusores"
                         "imagenOtros imagenOtros imagenOtros";
-}
+    }
 
-.subProductos{
-    grid-area: subProductos;
-    text-align: center;
-}
-.pProductos{
-    display: block;
-    grid-area: pProductos;
-    text-align: center;
-}
+    .subProductos{
+        grid-area: subProductos;
+        text-align: center;
+    }
+    .pProductos{
+        display: block;
+        grid-area: pProductos;
+        text-align: center;
+    }
 
-.imagenVela{
-    grid-area: imagenVela;
-}
+    .imagenVela{
+        grid-area: imagenVela;
+    }
 
-.imagenSahumerios{
-    grid-area: imagenSahumerios;
-}
+    .imagenSahumerios{
+        grid-area: imagenSahumerios;
+    }
 
-.imagenDifusores{
-    grid-area: imagenDifusores;
-}
+    .imagenDifusores{
+        grid-area: imagenDifusores;
+    }
 
-.imagenOtros{
-    grid-area: imagenOtros;
-}
+    .imagenOtros{
+        grid-area: imagenOtros;
+    }
 
 }
 
 @media screen and (min-width:1024px){
     .productos{
         justify-items: center;
-    display: grid;
-    grid-template-areas: "subProductos subProductos subProductos subProductos"
-                        "imagenVela imagenVela pProductos pProductos"
-                         
-                        "imagenSahumerios imagenSahumerios pProductos pProductos"
-                        "imagenDifusores imagenDifusores pProductos pProductos"
-                        "imagenOtros imagenOtros pProductos pProductos";
+        display: grid;
+        grid-template-areas:"subProductos subProductos subProductos subProductos"
+                            "imagenVela imagenVela pProductos pProductos"
+                            "imagenSahumerios imagenSahumerios pProductos pProductos"
+                            "imagenDifusores imagenDifusores pProductos pProductos"
+                            "imagenOtros imagenOtros pProductos pProductos";
 }
 
-.subProductos{
-    grid-area: subProductos;
-    text-align: center;
-}
-.pProductos{
-    display: block;
-    grid-area: pProductos;
-    text-align: center;
-}
+    .subProductos{
+        grid-area: subProductos;
+        text-align: center;
+    }
+    .pProductos{
+        display: block;
+        grid-area: pProductos;
+        text-align: center;
+    }
 
-.imagenVela{
-    grid-area: imagenVela;
-}
+    .imagenVela{
+        grid-area: imagenVela;
+    }
 
-.imagenSahumerios{
-    grid-area: imagenSahumerios;
-}
+    .imagenSahumerios{
+        grid-area: imagenSahumerios;
+    }
 
-.imagenDifusores{
-    grid-area: imagenDifusores;
-}
+    .imagenDifusores{
+        grid-area: imagenDifusores;
+    }   
 
-.imagenOtros{
-    grid-area: imagenOtros;
-}
+    .imagenOtros{
+        grid-area: imagenOtros;
+    }
 
 }
 
 /* css nosotros*/
 
 .nosotros{
+    margin-top: 100px;
+    margin-bottom: 200px;
     display: grid;
     grid-template-areas: "sobreNosotros sobreNosotros"
                          "video viedeo"
@@ -497,3 +428,5 @@ nav ul li a{
             grid-area: pNosotros;
         }
     }
+
+    /* css conatctos*/
