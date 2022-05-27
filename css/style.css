@@ -325,8 +325,8 @@ header h1{
     margin-top: 100px;
     margin-bottom: 200px;
     display: grid;
-    grid-template-areas: "sobreNosotros sobreNosotros"
-                         "video viedeo"
+    grid-template-areas:"sobreNosotros sobreNosotros"
+                        "video viedeo"
                         "yTube yTube";
     }                    
     
@@ -361,10 +361,10 @@ header h1{
         .nosotros{
             justify-items: center;
             display: grid;
-            grid-template-areas: "tituloSobre tituloSobre tituloSobre"
-                                 "pNosotros pNosotros pNosotros"
-                                 "video video video"
-                                 "yTube yTube yTube";
+            grid-template-areas:"tituloSobre tituloSobre tituloSobre"
+                                "pNosotros pNosotros pNosotros"
+                                "video video video"
+                                "yTube yTube yTube";
         }                       
         
         .tituloSobre{
@@ -397,11 +397,10 @@ header h1{
     @media screen and (min-width:1024px){
         .nosotros{
             display: grid;
-            grid-template-areas:
-                                 "tituloSobre tituloSobre tituloSobre tituloSobre"
-                                 "pNosotros pNosotros video video"
-                                 "pNosotros pNosotros video video"
-                                 "yTube yTube yTube yTube";
+            grid-template-areas:"tituloSobre tituloSobre tituloSobre tituloSobre"
+                                "pNosotros pNosotros video video"
+                                "pNosotros pNosotros video video"
+                                "yTube yTube yTube yTube";
         }                       
         
         .tituloSobre{
